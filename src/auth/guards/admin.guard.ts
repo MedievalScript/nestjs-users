@@ -13,7 +13,7 @@ export class Admin implements CanActivate {
     const request: AuthenticatedRequest = context.switchToHttp().getRequest();
     const { user } = request;
 
-    if (user.type === UserType.ADMIN) {
+    if (user.type === 'ADMIN') {
       return true;
     }
 

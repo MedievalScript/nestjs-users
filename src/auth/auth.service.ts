@@ -28,7 +28,7 @@ export class AuthService {
     });
 
     if (!foundUser) {
-      throw new NotFoundException('User not found');
+      throw new NotFoundException('User not found.');
     }
 
     if (
